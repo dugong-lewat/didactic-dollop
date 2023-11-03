@@ -183,18 +183,3 @@ proxies:
       headers:
         Host: vl17.rnd.biz.id
     udp: true
-  - name: "🇸🇬 Oracle"
-    server: 104.26.6.171
-    port: 80
-    type: vless
-    uuid: 9bc90ddf-b865-47cc-9f97-9d5ea3bca89f
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    # servername:
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vl31.rnd.biz.id
-    udp: true
