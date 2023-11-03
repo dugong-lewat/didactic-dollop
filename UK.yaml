@@ -1,0 +1,74 @@
+a: &a
+  type: vless
+  port: 443
+  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  udp: true
+  tls: true
+  network: ws
+  skip-cert-verify: true
+
+proxies:
+  - name: "🇬🇧 Hydra Communications"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext23.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext23.zxv.biz.id
+  - name: "🇬🇧 IONOS SE 1"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext24.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext24.zxv.biz.id
+  - name: "🇬🇧 IONOS SE 2"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext28.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext28.zxv.biz.id
+  - name: "🇬🇧 M247 Europe"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext25.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext25.zxv.biz.id
+  - name: "🇬🇧 OVH"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext26.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext26.zxv.biz.id
+  - name: "🇬🇧 Vultr"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext27.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext27.zxv.biz.id
+  - name: "🇬🇧 Stark Industries 1"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext45.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext45.zxv.biz.id
+  - name: "🇬🇧 Stark Industries 2"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext45.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext45.zxv.biz.id

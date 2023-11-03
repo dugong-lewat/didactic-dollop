@@ -1,0 +1,200 @@
+a: &a
+  type: vless
+  port: 443
+  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  udp: true
+  tls: true
+  network: ws
+  skip-cert-verify: true
+
+proxies:
+  - name: "🇸🇬 Google Cloud"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext21.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext21.zxv.biz.id
+  - name: "🇸🇬 M247 Europe"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext29.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext29.zxv.biz.id
+  - name: "🇸🇬 Kaopu Cloud"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext30.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext30.zxv.biz.id
+  - name: "🇸🇬 Kuroit"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext31.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext31.zxv.biz.id
+  - name: "🇸🇬 Akari Network"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext32.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext32.zxv.biz.id
+  - name: "🇸🇬 Yingda CN"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext33.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext33.zxv.biz.id
+  - name: "🇸🇬 First Server"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext34.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext34.zxv.biz.id
+  - name: "🇸🇬 Hostinger International"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext36.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext36.zxv.biz.id
+  - name: "🇸🇬 OVH"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext1.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext1.zxv.biz.id
+  - name: "🇸🇬 OVH 2"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext37.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext37.zxv.biz.id
+  - name: "🇸🇬 HostHatch"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext37.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext37.zxv.biz.id
+  - name: "🇸🇬 Amazon"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext50.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext50.zxv.biz.id
+  - name: "🇸🇬 Amazon 2"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext51.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext51.zxv.biz.id
+  - name: "🇸🇬 Amazon 3"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext52.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext52.zxv.biz.id
+###
+##
+###
+  - name: "🇸🇬 Neustar Security Service"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: aef3b456-2f83-4ca6-a66c-32bd2f534b68
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername: 
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ac7.zxv.biz.id
+    udp: true
+  - name: "🇸🇬 Digital Ocean"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: adbb9c54-a35b-494b-9a4d-dec54b0e1f7a
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl30.rnd.biz.id
+    udp: true
+  - name: "🇸🇬 Google Cloud 2"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: aa81e188-a979-411e-a10b-08287646cc43
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl26.rnd.biz.id
+    udp: true
+  - name: "🇸🇬 Alibaba Cloud"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: b3a8d600-b0a1-4227-9f2c-317739a50636
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl17.rnd.biz.id
+    udp: true
+  - name: "🇸🇬 Oracle"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 9bc90ddf-b865-47cc-9f97-9d5ea3bca89f
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl31.rnd.biz.id
+    udp: true

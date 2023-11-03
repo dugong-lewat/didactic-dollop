@@ -1,0 +1,18 @@
+a: &a
+  type: vless
+  port: 443
+  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  udp: true
+  tls: true
+  network: ws
+  skip-cert-verify: true
+
+proxies:
+  - name: "🇮🇩 Incapsula"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext47.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext47.zxv.biz.id

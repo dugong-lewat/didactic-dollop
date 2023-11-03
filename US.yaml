@@ -1,0 +1,156 @@
+a: &a
+  type: vless
+  port: 443
+  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  udp: true
+  tls: true
+  network: ws
+  skip-cert-verify: true
+
+proxies:
+  - name: "🇺🇸 Akamai Technologies"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext43.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext43.zxv.biz.id
+###
+##
+###
+  - name: "🇺🇸 Google Cloud 1"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 5c6d5301-e889-4278-a9cd-1b55f939e6d6
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl29.rnd.biz.id
+    udp: true
+  - name: "🇺🇸 Google Cloud 2"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: d8a98383-26db-4cd7-8d88-c14c180b5c75
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl25.rnd.biz.id
+    udp: true
+  - name: "🇺🇸 QuadraNet Enterprise 1"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 78c208f6-4b5a-47f4-b413-492ec086b7b3
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl12.rnd.biz.id
+    udp: true
+  - name: "🇺🇸 QuadraNet Enterprise 2"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 8f4531f9-411c-4795-88aa-9ce9bfd619a0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl13.rnd.biz.id
+    udp: true
+  - name: "🇺🇸 Ucloud IT Limited 1"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 6140db5e-4180-4db4-a720-2847c7640f02
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl20.rnd.biz.id
+    udp: true
+  - name: "🇺🇸 Ucloud IT Limited 2"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 8d74b407-abf8-4721-a125-d0a2cce9b4a1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl27.rnd.biz.id
+    udp: true
+  - name: "🇺🇸 Zenlayer"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 087ff222-7b54-49b7-a523-c70c4bd33666
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl18.rnd.biz.id
+    udp: true
+  - name: "🇺🇸 Hetzner"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 9690a2c2-136d-4da3-98d5-cc59445a31e0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl19.rnd.biz.id
+    udp: true
+  - name: "🇺🇸 Aryaka Network"
+    server: 104.26.6.171
+    port: 80
+    type: vless
+    uuid: 14ddd817-a070-4f7e-b31d-535523702b25
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    # servername:
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vl28.rnd.biz.id
+    udp: true
