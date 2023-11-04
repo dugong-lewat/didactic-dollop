@@ -96,6 +96,14 @@ proxies:
       path: "/"
       headers:
         Host: ext38.zxv.biz.id
+  - name: "🇸🇬 HostHatch 2"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext53.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext53.zxv.biz.id
   - name: "🇸🇬 Amazon"
     server: 104.26.6.171
     <<: *a
