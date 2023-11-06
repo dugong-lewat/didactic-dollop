@@ -128,6 +128,24 @@ proxies:
       path: "/"
       headers:
         Host: ext52.zxv.biz.id
+  - name: "🇸🇬 Akile"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext54.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext54.zxv.biz.id
+  - name: "🇸🇬 INCUBATEC"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext55.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext55.zxv.biz.id
+
+
 ###
 ##
 ###
