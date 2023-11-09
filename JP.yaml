@@ -24,3 +24,11 @@ proxies:
       path: "/"
       headers:
         Host: ext48.zxv.biz.id
+  - name: "🇯🇵 Akari Network"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext60.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext60.zxv.biz.id
