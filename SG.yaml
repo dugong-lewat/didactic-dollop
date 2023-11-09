@@ -11,11 +11,11 @@ proxies:
   - name: "🇸🇬 Google Cloud"
     server: 104.26.6.171
     <<: *a
-    servername: ext58.zxv.biz.id
+    servername: ext59.zxv.biz.id
     ws-opts:
       path: "/"
       headers:
-        Host: ext58.zxv.biz.id
+        Host: ext59.zxv.biz.id
   - name: "🇸🇬 M247 Europe"
     server: 104.26.6.171
     <<: *a
