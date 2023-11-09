@@ -11,11 +11,11 @@ proxies:
   - name: "🇸🇬 Google Cloud"
     server: 104.26.6.171
     <<: *a
-    servername: ext21.zxv.biz.id
+    servername: ext58.zxv.biz.id
     ws-opts:
       path: "/"
       headers:
-        Host: ext21.zxv.biz.id
+        Host: ext58.zxv.biz.id
   - name: "🇸🇬 M247 Europe"
     server: 104.26.6.171
     <<: *a
@@ -144,6 +144,24 @@ proxies:
       path: "/"
       headers:
         Host: ext55.zxv.biz.id
+  - name: "🇸🇬 Datacamp"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext56.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext56.zxv.biz.id
+  - name: "🇸🇬 Vultr Holdings"
+    server: 104.26.6.171
+    <<: *a
+    servername: ext57.zxv.biz.id
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ext57.zxv.biz.id
+
+
 
 
 ###
