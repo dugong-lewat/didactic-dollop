@@ -197,21 +197,6 @@ proxies:
       headers:
         Host: vl30.rnd.biz.id
     udp: true
-  - name: "🇸🇬 Google Cloud 2"
-    server: 104.26.6.171
-    port: 80
-    type: vless
-    uuid: aa81e188-a979-411e-a10b-08287646cc43
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    # servername:
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vl26.rnd.biz.id
-    udp: true
   - name: "🇸🇬 Alibaba Cloud"
     server: 104.26.6.171
     port: 80
